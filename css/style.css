@@ -7,6 +7,8 @@
     box-sizing: border-box;
   }
 
+
+
 header{
     background-color: rgb(0, 0, 0);
     font-family: 'Merriweather', sans-serif;
@@ -57,6 +59,7 @@ body {
     color: #c8a02c;
     font-size: 30px;
     margin: 10px;
+    
 }
 
 .parrafos{
@@ -65,9 +68,9 @@ body {
 }
 
 .parrafo-introduccion{
-    color: white;
+    color: #c8a02c;
     text-align: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .imagenes{
@@ -78,17 +81,20 @@ body {
     
 }
 .imagen{
-    margin-bottom: 60px; /* Ajusta el valor para la separación en la parte de abajo de las imagenes */
+    margin-bottom: 100px; /* Ajusta el valor para la separación en la parte de abajo de las imagenes */
     
 }
 
 .video{
     text-align: center;
+    padding: 10%;
 }
 
 .listas{
     color: white;
     font-size: 25px;
+    list-style:none;
+    text-align: left;
 }
 
 .lista{
@@ -96,13 +102,31 @@ body {
 }
 
 footer{
+    margin-top: auto;
+    width: 100%;
+    padding: 20px;
     color: #c8a02c;
     font-size: 30px;
     text-align: center;
     font-family: 'Merriweather', sans-serif;
     background-color: black;
 }
+/*Grid de info principal*/
+.grid-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Tres columnas iguales */
+    gap: 20px;
+    padding: 20px;
+}
 
+.grid-titulo {
+    background-color: #5d5246ed;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/*Grid de info de campeones*/
 .grid-campeones {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
@@ -121,4 +145,19 @@ footer{
     width: 100%; /* Imagen ocupa todo el espacio disponible */
     height: auto; /* Mantener la proporción de la imagen */
     border-radius: 10px;
+}
+
+/*Grid de info de final + video*/
+.grid-video{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Tres columnas iguales */
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid-titulo {
+    background-color: #5d5246ed;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
 }
