@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -14,21 +16,49 @@
 
 <body>
     <header>
-        <h1 class="titulos">Top Lane: El Pilar del Equipo</h1>
-        <nav class="navegador">    
-            <ul >
-                <li><a href="top.html">TOP</a></li>
-                <li><a href="jg.html">JG</a></li>
-                <li><a href="mid.html">MID</a></li>
-                <li><a href="adc.html">ADC</a></li>
-                <li><a href="sup.html">SUP</a></li>
-                <li><a href="flex.html">FLEX</a></li>
-                <li><a href="../index.html">MENU PRINCIPAL</a></li> 
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../media/logo/LeagueOG.jpg" alt="Logo pagina web">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+
+                    <ul class="navbar-nav d-flex">
+
+                    
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="jg.html">JG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mid.html">MID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adc.html">ADC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sup.html">SUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="flex.html">FLEX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">MENU</a>
+                        </li>            
+                    </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
+        <h1 class="titulos">Top Lane: El Pilar del Equipo</h1>
         <p class="parrafo-introduccion">La Top Lane es una de las posiciones más solitarias en League of Legends. Ubicada en la parte superior del mapa, los jugadores de esta línea suelen enfrentarse en intensos duelos 1v1 y tienen un impacto clave en el juego tardío. Los campeones que se desempeñan en esta línea suelen ser tanques, bruisers (luchadores) o split pushers (campeones que presionan otras líneas mientras su equipo pelea).</p>
         <div class="grid-info">
             <div class="grid-titulo">
@@ -54,19 +84,19 @@
         <h3 class="titulos">¿Que campeones se pueden jugar en este rol?</h3>
         <div class="grid-campeones">
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/top/darius.jpg" alt="Darius">
+                <img class="foto-champ" src="../media/campeones/top/darius.jpg" alt="Darius">
                 <h3 class="subtitulos">Darius</h3>
                 <p class="listas">Campeón de daño físico y presión constante. Ideal para dominar el carril.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/top/gwen.webp" alt="Gwen">
+                <img class="foto-champ" src="../media/campeones/top/gwen.webp" alt="Gwen">
                 <h3 class="subtitulos">Gwen</h3>
                 <p class="listas">Campeona híbrida con gran daño en peleas largas. Difícil de atrapar.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/top/sett.jpg" alt="Sett">
+                <img class="foto-champ" src="../media/campeones/top/sett.jpg" alt="Sett">
                 <h3 class="subtitulos">Sett</h3>
                 <p class="listas">Tanque-luchador con buen control y mucho aguante. Fuerte en peleas grupales.</p>
             </div>
@@ -76,21 +106,20 @@
             <div class="grid-titulo">
                 <h4 class="subtitulos">¿Es un rol recomendado para principiantes?</h4>
                 <ul class="listas">
-                    <li class="lista"> Sí, si te gusta:
+                    <li class="lista-desktop"> Sí, si te gusta:
                         La Top Lane puede ser una excelente opción para jugadores que disfrutan de un estilo de juego más individualista. Si te atrae la idea de jugar de manera independiente y tomar decisiones clave sin depender demasiado de la coordinación constante con tus compañeros de equipo, este rol es ideal. Además, tendrás la oportunidad de participar en duelos 1v1, donde las habilidades mecánicas y el entendimiento de los campeones son esenciales para ganar. La Top Lane también te ofrece un impacto significativo en el juego tardío, ya que los campeones de esta línea tienen el poder de decidir el destino de las peleas en equipo cuando llegan al juego avanzado, gracias a su resistencia o daño.</li>
-                    <li class="lista">No, si prefieres:
+                    <li class="lista-mobile">Sí, si te gusta: La Top Lane es ideal para jugadores que prefieren jugar de forma independiente. Si disfrutas de duelos 1v1 y tomar decisiones clave sin depender demasiado del equipo, este rol es perfecto. Además, tiene un gran impacto en el juego tardío, con campeones que pueden decidir el resultado de las peleas.</li>
+                    <li class="lista-desktop">No, si prefieres:
                         Por otro lado, si eres de los jugadores que prefieren la acción constante desde el primer minuto, o si disfrutas de un estilo de juego más grupal donde todo el equipo se coordina para obtener victorias, entonces la Top Lane puede no ser la mejor opción para ti. La Top Lane es una línea que requiere paciencia, ya que a menudo te verás enfrentando duelos largos y, en muchos casos, la clave está en sobrevivir y escalar hasta el juego tardío en lugar de buscar peleas tempranas. Si prefieres un rol que te permita estar más involucrado en las peleas grupales o en las interacciones constantes con tus compañeros de equipo, tal vez deberías considerar otras posiciones como Jungla o Soporte, que ofrecen más acción desde el principio del juego.</li>    
+                    <li class="lista-mobile">No, si no te gusta: La Top Lane puede no ser para ti si prefieres un rol más enfocado en el trabajo en equipo y la coordinación constante. Si no disfrutas de los duelos 1v1 o de tomar decisiones independientes, podrías encontrar este rol algo solitario y desafiante, especialmente cuando las peleas en equipo se vuelven clave.</li>
                 </ul>   
             </div>
             <div class="grid-titulo">
                 <h5 class="subtitulos">A continuacion te dejamos un video que resume todo lo que necesitas saber para empezar a jugar este rol.</h5>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OzT0sOjbQ6A?si=eelrQjuKunpeuaqt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe class="video" src="https://www.youtube-nocookie.com/embed/OzT0sOjbQ6A?si=eelrQjuKunpeuaqt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>    
-            </div>
-            
-
-                
+            </div>  
         </div>
         
     </main>
@@ -101,6 +130,8 @@
         <textarea name="mensaje" id="mensaje"></textarea>
         <input type="submit" value="Enviar">
     </footer>
+    <!-- Bootstrap JS (al final del body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>

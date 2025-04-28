@@ -13,39 +13,63 @@
     <title>Rolcito finder</title>
 </head>
 <!-- 
-LISTO HACER GRID DE 2X2 PARA PONER LAS COSAS EN CADA PAGINA,
-LISTO acomodar el footer para que no deje espacio libre y 
-LISTO agregar los champs a todas las paginas,
-RECORDA QUE NO TERMINASTE FLEX, SOLO ESTA LA ESTRUCTURA, FALTA LA INFO-->
+NO LO HICE AL FINAL, DSP INVESTIGAR Hacer que cuando pase el mouse por el nav bar se resalte con bootstrap
+HICE TODAS AL FINAL Hacer la version mobil de min 2 paginas (index y top)
+Mejore varias cosas, en especial el video y el navbar Usar bootstrap para hacer mas bonito algunas cosas
+TERMINE TODO, Solo falta la info de las paginas
+-->
 <body>
     <header>
-        <h1 class="titulos">¿Cual es tu rol ideal en League of Legends?</h1>
-        <nav class="navegador">
-            <ul>
-                <li><a href="./roles/top.html">TOP</a></li>
-                <li><a href="./roles/jg.html">JG</a></li>
-                <li><a href="./roles/mid.html">MID</a></li>
-                <li><a href="./roles/adc.html">ADC</a></li>
-                <li><a href="./roles/sup.html">SUP</a></li>
-                <li><a href="./roles/flex.html">FLEX</a></li>
-                <li><a href="index.html">MENU PRINCIPAL</a></li>
-            </ul> 
-            
-        </nav>   
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+              <a class="navbar-brand" href="index.html">
+                <img class="logo" src="media/logo/LeagueOG.jpg" alt="Logo pagina web">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbar-toggler">
+
+                <ul class="navbar-nav d-flex">
+
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/top.html">TOP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/jg.html">JG</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/mid.html">MID</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/adc.html">ADC</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/sup.html">SUP</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./roles/flex.html">FLEX</a>
+                  </li>            
+                </ul>
+              </div>
+            </div>
+          </nav> 
     </header>
 
-    <main><p class="parrafo-introduccion">Los Roles en League of Legends: ¿Cuál es el tuyo?
-
-        En League of Legends, cada jugador asume un rol específico dentro del equipo, lo que define su estilo de juego y sus responsabilidades en la partida. Existen cinco roles principales, cada uno con una función única, cada rol tiene un impacto diferente en el juego y elegir el adecuado depende de tu estilo de juego. ¿Prefieres ser el muro del equipo, dominar peleas o brindar apoyo estratégico? ¡Descubre cuál es el rol ideal para ti!</p>
+    <main>
+        <h1 class="titulos">¿Cual es tu rol ideal en League of Legends?</h1>
+        <p class="parrafo-introduccion">En League of Legends, cada jugador asume un rol específico dentro del equipo, lo que define su estilo de juego y sus responsabilidades en la partida. Existen cinco roles principales, cada uno con una función única, cada rol tiene un impacto diferente en el juego y elegir el adecuado depende de tu estilo de juego. ¿Prefieres ser el muro del equipo, dominar peleas o brindar apoyo estratégico? ¡Descubre cuál es el rol ideal para ti!</p>
         <div class="imagenes">
-            <a class="imagen" href="roles/top.html"><img src="media/roles/top_icon.png" alt="icono de top lane"></a>
-            <a class="imagen" href="roles/jg.html"><img src="media/roles/jg_icon.png" alt="icono de top lane"></a>
-            <a class="imagen" href="roles/mid.html"><img src="media/roles/mid_icon.png" alt="icono de top lane"></a>
-        </div>
-        <div class="imagenes">
-            <a class="imagen" href="roles/adc.html"><img src="media/roles/adc_icon.png" alt="icono de top lane"></a>
-            <a class="imagen" href="roles/sup.html"><img src="media/roles/sup_icon.png" alt="icono de top lane"></a>
-            <a class="imagen" href="roles/flex.html"><img src="media/roles/flex_icon.png" alt="icono de top lane"></a>
+            <a href="roles/top.html"><img class="imagen" src="media/roles/top_icon.png" alt="icono de top lane"></a>
+            <a href="roles/jg.html"><img class="imagen" src="media/roles/jg_icon.png" alt="icono de top lane"></a>
+            <a href="roles/mid.html"><img class="imagen" src="media/roles/mid_icon.png" alt="icono de top lane"></a>
+            <a href="roles/adc.html"><img class="imagen" src="media/roles/adc_icon.png" alt="icono de top lane"></a>
+            <a href="roles/sup.html"><img class="imagen" src="media/roles/sup_icon.png" alt="icono de top lane"></a>
+            <a href="roles/flex.html"><img class="imagen" src="media/roles/flex_icon.png" alt="icono de top lane"></a>
         </div>
     </main>
     
@@ -55,11 +79,8 @@ RECORDA QUE NO TERMINASTE FLEX, SOLO ESTA LA ESTRUCTURA, FALTA LA INFO-->
         <textarea name="mensaje" id="mensaje"></textarea>
         <input type="submit" value="Enviar">
     </footer>
+    <!-- Bootstrap JS (al final del body) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
-
-
-
-
 </html>
 

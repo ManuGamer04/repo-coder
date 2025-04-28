@@ -1,49 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-
-
-header{
-    background-color: rgb(0, 0, 0);
-    font-family: 'Merriweather', sans-serif;
+html, body {
     width: 100%;
-    padding: 0;
-    margin: 0;
+    height: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    font-family: 'Merriweather', sans-serif;
 }
 
-.navegador ul{
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
+/* INFO NAVBAR */
+.navbar{
+    padding: 2rem;
+    background-color: rgb(0, 0, 0);
 }
-
-.navegador{
+.navbar-nav {
     display: flex;
+    width: 100%;
     justify-content: center;
 }
 
-.navegador li{
-    margin: 0 15px;
+.navbar .nav-link{
+        color:#c8a02c;
+        font-size: 50px;
+}
+.nav-link{
+    margin: 25px;
+}
+.navbar .navbar-brand {
+        color: #c8a02c;
 }
 
-.navegador a{
-    color: #c8a02c;
-    font-size: 30px;
-    text-decoration: none;
-    padding: 15px 15px;
-    display: block;
-    
-    
+.logo{
+    height: 150px;
+    width: auto;
 }
-
 body {
     background: #122243 url('http://www.transparenttextures.com/patterns/asfalt-dark.png');
     background-blend-mode: multiply;
@@ -54,6 +42,7 @@ body {
     color: #c8a02c;
     font-size: 50px;
     text-align: center;
+    padding: 50px;
 }
 .subtitulos {
     color: #c8a02c;
@@ -62,32 +51,39 @@ body {
     
 }
 
-.parrafos{
-    color: white;
-    font-size: 25px;
-}
-
 .parrafo-introduccion{
     color: #c8a02c;
     text-align: center;
     font-size: 40px;
 }
 
-.imagenes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 250px;
-    
+.imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px; 
+    justify-items: center;
+    align-items: center; 
+    margin-bottom: 50px;
 }
 .imagen{
-    margin-bottom: 100px; /* Ajusta el valor para la separación en la parte de abajo de las imagenes */
-    
+    width: 150px;
+    height: auto;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; /* Ancho 100% del contenedor */
+    padding-bottom: 56.25%; /* Relación 16:9: (9/16 = 0.5625) */
+    height: 0;
+    overflow: hidden;
 }
 
 .video{
-    text-align: center;
-    padding: 10%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;  /* El video ocupa todo el ancho */
+    height: 100%; /* El alto se ajusta automáticamente manteniendo la proporción */
 }
 
 .listas{
@@ -99,6 +95,14 @@ body {
 
 .lista{
     margin-bottom: 15px;
+}
+
+.lista-desktop{
+    margin-bottom: 15px;
+    display: block;
+}
+.lista-mobile {
+    display: none;
 }
 
 footer{
@@ -114,7 +118,7 @@ footer{
 /*Grid de info principal*/
 .grid-info{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Tres columnas iguales */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
     gap: 20px;
     padding: 20px;
 }
@@ -142,15 +146,15 @@ footer{
 }
 
 .foto-champ {
-    width: 100%; /* Imagen ocupa todo el espacio disponible */
-    height: auto; /* Mantener la proporción de la imagen */
+    width: 100%; 
+    height: auto; 
     border-radius: 10px;
 }
 
 /*Grid de info de final + video*/
 .grid-video{
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Tres columnas iguales */
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
     gap: 20px;
     padding: 20px;
 }
@@ -160,4 +164,74 @@ footer{
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+}
+@media screen and (max-width: 767px) {
+    .navbar-brand {
+        display: none;
+    }
+    .navbar{
+        padding:1rem;
+    }
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start; /* Opcional, para que empiecen a la izquierda */
+        width: 100%; /* Dejá el ancho completo */
+    }
+    .navbar .nav-link{
+        font-size: 20px;
+        margin: 5px;
+        padding: 0; 
+    }
+    
+    .navbar-toggler {
+        border-color: #c8a02c;
+        background-color: #5d5246ed; /* o el color que quieras */
+    }
+    .titulos { 
+        color: #c8a02c;
+        font-size: 35px;
+        text-align: center;
+        padding: 25px;
+    }
+    .parrafo-introduccion{
+        color: #c8a02c;
+        text-align: center;
+        font-size: 20px;
+    }
+    .subtitulos {
+        color: #c8a02c;
+        font-size: 20px;
+        margin: 0px; 
+    }
+    
+    .imagenes {
+        grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
+        gap: 50px; 
+    }
+    .imagen{
+        width: 75px;
+        height: auto;
+    }
+
+    .listas{
+        font-size: 15px;
+    }
+
+    .grid-info{
+        grid-template-columns: 1fr; 
+    }
+    .grid-campeones {
+        grid-template-columns: 1fr;
+    }
+    .grid-video{
+        grid-template-columns: 1fr;
+    }
+    .lista-desktop{
+        margin-bottom: 0px;
+        display: none;
+    }
+    .lista-mobile {
+        display: block;
+        margin-bottom: 15px;
+    }
 }

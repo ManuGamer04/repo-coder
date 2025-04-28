@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 
@@ -14,21 +16,49 @@
 
 <body>
     <header>
-        <h1 class="titulos">Jungla: El Estratega del Mapa</h1>
-        <nav class="navegador">    
-            <ul >
-                <li><a href="top.html">TOP</a></li>
-                <li><a href="jg.html">JG</a></li>
-                <li><a href="mid.html">MID</a></li>
-                <li><a href="adc.html">ADC</a></li>
-                <li><a href="sup.html">SUP</a></li>
-                <li><a href="flex.html">FLEX</a></li>
-                <li><a href="../index.html">MENU PRINCIPAL</a></li> 
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="../index.html">
+                    <img class="logo" src="../media/logo/LeagueOG.jpg" alt="Logo pagina web">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar-toggler">
+
+                    <ul class="navbar-nav d-flex">
+
+                    
+                        <li class="nav-item">
+                            <a class="nav-link" href="top.html">TOP</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="mid.html">MID</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="adc.html">ADC</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="sup.html">SUP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="flex.html">FLEX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">MENU</a>
+                        </li>            
+                    </ul>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
+        <h1 class="titulos">Jungla: El Estratega del Mapa</h1>
         <p class="parrafo-introduccion">El jungla es el único rol que no tiene una línea fija, en su lugar, se dedica a limpiar los campamentos de la jungla y ayudar a sus compañeros con emboscadas (ganks). Su impacto es clave para la visión del mapa y el control de objetivos como el Dragón y el Barón Nashor.</p>
         <div class="grid-info">
             <div class="grid-titulo">
@@ -56,19 +86,19 @@
         <h3 class="titulos">¿Que campeones se pueden jugar en este rol?</h3>
         <div class="grid-campeones">
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/jg/lee sin.webp" alt="Lee Sin">
+                <img class="foto-champ" src="../media/campeones/jg/lee sin.webp" alt="Lee Sin">
                 <h3 class="subtitulos">Lee Sin</h3>
                 <p class="listas">Ideal para hacer jugadas rápidas y ayudar a todo el equipo. Requiere precisión y reflejos para aprovechar su kit.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/jg/nunu.webp" alt="Nunu y Willump">
+                <img class="foto-champ" src="../media/campeones/jg/nunu.webp" alt="Nunu y Willump">
                 <h3 class="subtitulos">Nunu y Willump</h3>
                 <p class="listas">Perfecto para jugadores que priorizan el trabajo en equipo. Su bola de nieve y ultimate pueden cambiar una pelea.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="..//media/campeones/jg/maestro yi.webp" alt="Maestro Yi">
+                <img class="foto-champ" src="../media/campeones/jg/maestro yi.webp" alt="Maestro Yi">
                 <h3 class="subtitulos">Maestro Yi</h3>
                 <p class="listas">Fácil de usar pero difícil de dominar. Letal si consigue ventaja, ideal para limpiar la jungla rápidamente y eliminar enemigos aislados.</p>
             </div>
@@ -78,16 +108,18 @@
             <div class="grid-titulo">
                 <h4 class="subtitulos">¿Es un rol recomendado para principiantes?</h4>
                 <ul class="listas">
-                    <li class="lista">Sí, si te gusta:
+                    <li class="lista-desktop">Sí, si te gusta:
                         La Jungla puede ser una opción ideal para jugadores que disfrutan de un estilo de juego más dinámico y estratégico. Si te atrae la idea de tener un impacto directo en todas las líneas del mapa y tomar decisiones clave en momentos críticos del juego, este rol es perfecto para ti. Como junglero, tendrás la oportunidad de ayudar a tus compañeros de equipo mediante gankeos, control de visión y el manejo de objetivos importantes como dragones, heraldos y barones. La jungla es un rol esencial que puede cambiar el curso del juego si se juega correctamente. Además, tendrás la responsabilidad de crear las oportunidades de ventaja para tu equipo, ya sea a través de emboscadas o presionando a los enemigos en las líneas. Es un rol que te permite influir en el ritmo del juego y puede ser muy satisfactorio cuando tus decisiones impactan positivamente a tus compañeros de equipo.</li>
-                    <li class="lista">No, si prefieres:
+                    <li class="lista-mobile">Sí, si te gusta: La Top Lane es ideal para jugadores que prefieren jugar de forma independiente. Si disfrutas de duelos 1v1 y tomar decisiones clave sin depender demasiado del equipo, este rol es perfecto. Además, tiene un gran impacto en el juego tardío, con campeones que pueden decidir el resultado de las peleas.</li>
+                    <li class="lista-desktop">No, si prefieres:
                         Por otro lado, si eres un jugador que disfruta de un estilo de juego más predecible, donde tus interacciones se limitan a enfrentamientos más directos en una sola línea, la Jungla podría no ser la mejor opción. El rol de jungla requiere una gran capacidad para adaptarse a diferentes situaciones, y las decisiones que tomes pueden tener un impacto muy grande tanto positivo como negativo. Además, si prefieres estar involucrado directamente en peleas constantes o prefieres una línea donde puedas concentrarte únicamente en tu propio progreso (como en la Top Lane o ADC), entonces la jungla podría no ser la mejor opción para ti. Este rol implica mucho movimiento por el mapa, coordinación con tu equipo y también un buen control de la visión, por lo que requiere una buena comprensión de las mecánicas globales del juego.</li>    
+                    <li class="lista-mobile">Sí, si te gusta: La Top Lane es ideal para jugadores que prefieren jugar de forma independiente. Si disfrutas de duelos 1v1 y tomar decisiones clave sin depender demasiado del equipo, este rol es perfecto. Además, tiene un gran impacto en el juego tardío, con campeones que pueden decidir el resultado de las peleas.</li>
                 </ul>
             </div>
             <div class="grid-titulo">
                 <h5 class="subtitulos">A continuacion te dejamos un video que resume todo lo que necesitas saber para empezar a jugar este rol.</h5>
-                <div class="video">
-                    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/luGB5hPoLfk?si=0Ie22giRBMxDF6q2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <div class="video-container">
+                    <iframe class="video" src="https://www.youtube-nocookie.com/embed/OzT0sOjbQ6A?si=eelrQjuKunpeuaqt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
     </main>
@@ -97,7 +129,8 @@
         <textarea name="mensaje" id="mensaje"></textarea>
         <input type="submit" value="Enviar">
     </footer>
-    
+    <!-- Bootstrap JS (al final del body) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </body>
 
 </html>
