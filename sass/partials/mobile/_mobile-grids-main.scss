@@ -1,0 +1,62 @@
+@media screen and (max-width: 767px){
+    .grid-info{
+        grid-template-columns: 1fr; 
+        .grid-titulo{
+            .subtitulos{
+                color: #c8a02c;
+                font-size: 20px;
+                margin: 0px; 
+            }
+            .listas{
+                font-size: 15px;
+            }
+        }
+        
+    }
+    .grid-campeones-desktop{
+        display: none;
+    }
+    .grid-campeones-mobile{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 10%;
+        .card{
+            background-color: #c8a02c;
+            .card-body{        
+                background-color: #5d5246ed;
+                color: white;
+            }
+            .list-group{
+                .list-group-item{
+                    background-color: #5d5246ed;
+                    color: white;
+                    border-color: #c8a02c;
+                }
+            }
+        }
+    }
+    .grid-video{
+        grid-template-columns: 1fr;
+        .grid-titulo{
+            .subtitulos{
+                color: #c8a02c;
+                font-size: 20px;
+                margin: 0px; 
+            }
+            .listas{
+                font-size: 15px;
+                .lista-desktop{
+                    margin-bottom: 0px;
+                    display: none;
+                }
+                .lista-mobile{
+                    display: block;
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}
+
+

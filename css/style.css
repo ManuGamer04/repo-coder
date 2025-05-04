@@ -169,12 +169,7 @@ footer{
     padding: 20px;
 }
 
-.grid-titulo {
-    background-color: #5d5246ed;
-    border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-}
+
 @media screen and (max-width: 767px) {
     .navbar-brand {
         display: none;

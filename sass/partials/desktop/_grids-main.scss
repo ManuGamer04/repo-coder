@@ -1,0 +1,107 @@
+
+.grid-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+    padding: 20px;
+    .grid-titulo{
+        background-color: #5d5246ed;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #c8a02c;
+        .subtitulos{
+            color: #c8a02c;
+            font-size: 30px;
+            margin: 10px;
+        }
+        .listas{
+            color: white;
+            font-size: 25px;
+            list-style:none;
+            text-align: left;
+            .lista{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    
+}
+
+.grid-campeones-desktop{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+    gap: 20px;
+    padding: 20px;
+    .presentacion-campeon{
+        background-color: #5d5246ed;
+        border: 1px solid #c8a02c;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        .foto-champ{
+            width: 100%; 
+            height: auto; 
+            border-radius: 10px;
+        }
+        .subtitulos{
+            color: #c8a02c;
+            font-size: 30px;
+            margin: 10px;}
+        .listas{
+            color: white;
+            font-size: 25px;
+            list-style:none;
+            text-align: left;
+        }
+    }
+}
+
+.grid-campeones-mobile{
+    display: none;
+}
+
+.grid-video{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
+    gap: 20px;
+    padding: 20px;
+    .grid-titulo{
+        background-color: #5d5246ed;
+        border-radius: 10px;
+        padding: 20px;
+        text-align: center;
+        border: 1px solid #c8a02c;
+        .subtitulos{
+            color: #c8a02c;
+            font-size: 30px;
+            margin: 10px;}
+        .listas{
+            color: white;
+            font-size: 25px;
+            list-style:none;
+            text-align: left;
+            .lista-desktop{
+                margin-bottom: 15px;
+                display: block;
+            }
+            .lista-mobile{
+                display: none;
+            }
+        }
+        .video-container{
+            position: relative;
+            width: 100%; /* Ancho 100% del contenedor */
+            padding-bottom: 56.25%; /* Relación 16:9: (9/16 = 0.5625) */
+            height: 0;
+            overflow: hidden;
+            .video{
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;  /* El video ocupa todo el ancho */
+                height: 100%; /* El alto se ajusta automáticamente manteniendo la proporción */
+            }
+        }
+    }
+}

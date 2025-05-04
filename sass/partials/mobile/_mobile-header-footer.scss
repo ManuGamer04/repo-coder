@@ -1,0 +1,42 @@
+@media screen and (max-width: 767px) {
+    header{
+        .navbar{
+            padding:1rem;
+            .navbar-brand {
+                display: none;
+            }
+            .navbar-nav {
+                flex-direction: column;
+                align-items: flex-start; /* Opcional, para que empiecen a la izquierda */
+                width: 100%; /* Dejá el ancho completo */
+                .nav-item{
+                    .nav-link{
+                        font-size: 20px;
+                        margin: 5px;
+                        padding: 0; 
+                    }
+                }    
+            }
+            .navbar-toggler {
+                border-color: #c8a02c;
+                background-color: #5d5246ed; /* o el color que quieras */
+            }
+        }
+    }
+
+    footer{
+        margin-top: auto;
+        width: 100%;
+        padding: 20px;
+        color: #c8a02c;
+        font-size: 30px;
+        text-align: center;
+        font-family: 'Merriweather', sans-serif;
+        background-color: black;
+        .subtitulos{
+            color: #c8a02c;
+            font-size: 30px;
+            margin: 10px;
+        }
+    }
+}

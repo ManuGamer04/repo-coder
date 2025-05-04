@@ -1,0 +1,39 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+    font-family: 'Merriweather', sans-serif;
+}
+main{
+    .titulos{
+        color: #c8a02c;
+        font-size: 50px;
+        text-align: center;
+        padding: 50px;
+    }
+    .parrafo-introduccion{
+        color: #c8a02c;
+        text-align: center;
+        font-size: 40px;
+    }
+    .imagenes{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 100px; 
+        justify-items: center;
+        align-items: center; 
+        margin-bottom: 50px;
+        .imagen{
+            width: 150px;
+            height: auto;
+        }
+    }
+}
+
+body{
+    background: #122243 url('http://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-blend-mode: multiply;
+}
+
+
+

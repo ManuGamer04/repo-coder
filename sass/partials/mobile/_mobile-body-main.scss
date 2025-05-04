@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px){
+    main{
+        .titulos{
+            color: #c8a02c;
+            font-size: 35px;
+            text-align: center;
+            padding: 25px;
+        }
+        .parrafo-introduccion{
+            color: #c8a02c;
+            text-align: center;
+            font-size: 20px;
+        }
+        .imagenes{
+            grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
+            gap: 50px; 
+            .imagen{
+                width: 75px;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+
+
