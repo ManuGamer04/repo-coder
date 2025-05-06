@@ -1,26 +1,62 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap");
+.grid-info .grid-titulo .subtitulos, .grid-campeones-desktop .presentacion-campeon .subtitulos, .grid-video .grid-titulo .subtitulos, footer .subtitulos {
+  color: #c8a02c;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.grid-info .grid-titulo .listas, .grid-campeones-desktop .presentacion-campeon .listas, .grid-video .grid-titulo .listas {
+  color: white;
+  font-size: 25px;
+  list-style: none;
+  text-align: left;
+}
+
+@keyframes expandir-linea {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+.navbar .nav-link:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #c8a02c;
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-link:hover:before {
+  animation: expandir-linea 0.3s ease forwards;
+}
+
 header .navbar {
   padding: 2rem;
-  background-color: rgb(0, 0, 0);
+  background-color: black;
 }
-header .navbar .navbar-brand {
-  color: #c8a02c;
-}
-header .navbar .navbar-brand .logo {
+header .navbar .navbar-marca .logo-marca {
   height: 150px;
   width: auto;
 }
-header .navbar .navbar-nav {
+header .navbar .navbar-lista {
   display: flex;
   width: 100%;
   justify-content: center;
   color: #c8a02c;
 }
-header .navbar .navbar-nav .nav-link {
+header .navbar .navbar-lista .navbar-lista-link {
   color: #c8a02c;
   font-size: 50px;
   margin: 25px;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
 }
 
 footer {
@@ -33,12 +69,6 @@ footer {
   font-family: "Merriweather", sans-serif;
   background-color: black;
 }
-footer .subtitulos {
-  color: #c8a02c;
-  font-size: 30px;
-  margin: 10px;
-}
-
 html, body {
   width: 100%;
   height: 100%;
@@ -88,24 +118,13 @@ body {
   text-align: center;
   border: 1px solid #c8a02c;
 }
-.grid-info .grid-titulo .subtitulos {
-  color: #c8a02c;
-  font-size: 30px;
-  margin: 10px;
-}
-.grid-info .grid-titulo .listas {
-  color: white;
-  font-size: 25px;
-  list-style: none;
-  text-align: left;
-}
 .grid-info .grid-titulo .listas .lista {
   margin-bottom: 15px;
 }
 
 .grid-campeones-desktop {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 20px;
 }
@@ -121,18 +140,6 @@ body {
   height: auto;
   border-radius: 10px;
 }
-.grid-campeones-desktop .presentacion-campeon .subtitulos {
-  color: #c8a02c;
-  font-size: 30px;
-  margin: 10px;
-}
-.grid-campeones-desktop .presentacion-campeon .listas {
-  color: white;
-  font-size: 25px;
-  list-style: none;
-  text-align: left;
-}
-
 .grid-campeones-mobile {
   display: none;
 }
@@ -149,17 +156,6 @@ body {
   padding: 20px;
   text-align: center;
   border: 1px solid #c8a02c;
-}
-.grid-video .grid-titulo .subtitulos {
-  color: #c8a02c;
-  font-size: 30px;
-  margin: 10px;
-}
-.grid-video .grid-titulo .listas {
-  color: white;
-  font-size: 25px;
-  list-style: none;
-  text-align: left;
 }
 .grid-video .grid-titulo .listas .lista-desktop {
   margin-bottom: 15px;
@@ -262,14 +258,20 @@ body {
     width: 100%;
     padding-bottom: 10%;
   }
-  .grid-campeones-mobile .card {
-    background-color: #c8a02c;
+  .grid-campeones-mobile .tarjeta {
+    background-color: rgba(93, 82, 70, 0.9294117647);
+    border-color: #c8a02c;
   }
-  .grid-campeones-mobile .card .card-body {
+  .grid-campeones-mobile .tarjeta .tarjeta-cuerpo {
     background-color: rgba(93, 82, 70, 0.9294117647);
     color: white;
   }
-  .grid-campeones-mobile .card .list-group .list-group-item {
+  .grid-campeones-mobile .tarjeta .tarjeta-cuerpo .subtitulos {
+    color: #c8a02c;
+    font-size: 30px;
+    margin: 10px;
+  }
+  .grid-campeones-mobile .tarjeta .lista-grupo .lista-grupo-elemento {
     background-color: rgba(93, 82, 70, 0.9294117647);
     color: white;
     border-color: #c8a02c;

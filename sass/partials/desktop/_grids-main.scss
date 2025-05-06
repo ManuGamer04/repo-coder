@@ -1,25 +1,22 @@
-
+@use  "../variables" as*;
+@use  "../extends" as *;
+@use  "../mixins" as *;
 .grid-info{
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas iguales */
     gap: 20px;
     padding: 20px;
     .grid-titulo{
-        background-color: #5d5246ed;
+        background-color: $marroncito;
         border-radius: 10px;
         padding: 20px;
         text-align: center;
-        border: 1px solid #c8a02c;
+        border: 1px solid $oro;
         .subtitulos{
-            color: #c8a02c;
-            font-size: 30px;
-            margin: 10px;
+            @extend %subtitulo;
         }
         .listas{
-            color: white;
-            font-size: 25px;
-            list-style:none;
-            text-align: left;
+            @extend %listas;
             .lista{
                 margin-bottom: 15px;
             }
@@ -29,13 +26,11 @@
 }
 
 .grid-campeones-desktop{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Tres columnas iguales */
-    gap: 20px;
-    padding: 20px;
+    @include grid-container(3); 
+    
     .presentacion-campeon{
-        background-color: #5d5246ed;
-        border: 1px solid #c8a02c;
+        background-color: $marroncito;
+        border: 1px solid $oro;
         border-radius: 10px;
         padding: 20px;
         text-align: center;
@@ -45,14 +40,10 @@
             border-radius: 10px;
         }
         .subtitulos{
-            color: #c8a02c;
-            font-size: 30px;
-            margin: 10px;}
+            @extend %subtitulo;
+        }
         .listas{
-            color: white;
-            font-size: 25px;
-            list-style:none;
-            text-align: left;
+            @extend %listas;
         }
     }
 }
@@ -67,20 +58,16 @@
     gap: 20px;
     padding: 20px;
     .grid-titulo{
-        background-color: #5d5246ed;
+        background-color: $marroncito;
         border-radius: 10px;
         padding: 20px;
         text-align: center;
-        border: 1px solid #c8a02c;
+        border: 1px solid $oro;
         .subtitulos{
-            color: #c8a02c;
-            font-size: 30px;
-            margin: 10px;}
+            @extend %subtitulo;
+        }
         .listas{
-            color: white;
-            font-size: 25px;
-            list-style:none;
-            text-align: left;
+            @extend %listas;
             .lista-desktop{
                 margin-bottom: 15px;
                 display: block;

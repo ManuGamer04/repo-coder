@@ -1,25 +1,31 @@
+@use  "../variables" as*;
+@use  "../extends" as *;
+@use  "../mixins" as *;
+@use "../animaciones" as *;
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
 header{
     .navbar{
         padding: 2rem;
-        background-color: rgb(0, 0, 0);
-        .navbar-brand{
-            color: #c8a02c;
-                .logo{
+        background-color: $negro;
+        .navbar-marca{
+            .logo-marca{
                     height: 150px;
                     width: auto;
                 }
         }
-
-        .navbar-nav{
+        .navbar-lista{
             display: flex;
             width: 100%;
             justify-content: center;
-            color: #c8a02c;
-            .nav-link{
-                color:#c8a02c;
+            color: $oro;
+            .navbar-lista-link{
+                color:$oro;
                 font-size: 50px;
                 margin: 25px;
+                text-decoration: none;
+                position: relative;
+                transition: all 0.3s ease;
             }
         }
     }
@@ -29,14 +35,12 @@ footer{
     margin-top: auto;
     width: 100%;
     padding: 20px;
-    color: #c8a02c;
+    color: $oro;
     font-size: 30px;
     text-align: center;
     font-family: 'Merriweather', sans-serif;
-    background-color: black;
+    background-color: $negro;
     .subtitulos{
-        color: #c8a02c;
-        font-size: 30px;
-        margin: 10px;
+        @extend %subtitulo;
     }
 }

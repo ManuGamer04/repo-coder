@@ -1,0 +1,11 @@
+Uso de animaciones (keyframe o libreria a eleccion, de las vistas en clase u otra). Gradiente no es animaciones
+Sitio full responsive para mobile (todos los html adaptados a mobile, sin scroll horzizontal (overflow-x))
+Sass aplicado en el proyecto: OBLIGATORIO INCLUIR:
+    nesting
+    partials los necesarios pero por lo menos 1
+    variables
+    extend y mixting (1 por lo menos)
+El css viejo borrado, solo dejar el css donde complia el sass y el map en caso de que node lo haya creado. En el head de los html solo un link a css.
+
+No contenido de relleno (ni lorem ni imagenes ni textos q no sean los del proyecto)
+

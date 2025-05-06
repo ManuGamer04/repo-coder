@@ -17,43 +17,51 @@
     <title>Rolcito finder</title>
 </head>
 <!-- 
-NO LO HICE AL FINAL, DSP INVESTIGAR Hacer que cuando pase el mouse por el nav bar se resalte con bootstrap
+Hacer que cuando pase el mouse por el nav bar se resalte con bootstrap
+Actualizar el menu para que sea igual en todas las paginas
+Completar la info de las paginas que faltan
+  Cambiar video jg/mid/adc
+REVISAR LAS CORRECIONES DE GRID y bootstrap
 
 -->
 <body>
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-
-              <a class="navbar-brand" href="index.html">
-                <img class="logo" src="media/logo/LeagueOG.jpg" alt="Logo pagina web">
-              </a>
-
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="boton navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-
+              
+              <div class="navbar-marca">
+                <a class="navbar-brand" href="index.html">
+                  <img class="logo-marca logo" src="media/logo/LeagueOG.jpg" alt="Logo pagina web">
+                </a>
+              </div>
+                
               <div class="collapse navbar-collapse" id="navbar-toggler">
 
-                <ul class="navbar-nav d-flex">
+                <ul class="navbar-lista navbar-nav d-flex">
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/top.html">TOP</a>
+                    <a class="navbar-lista-link nav-link" href="./roles/top.html">TOP</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/jg.html">JG</a>
+                    <a class="navbar-lista-link nav-link" href="./roles/jg.html">JG</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/mid.html">MID</a>
+                    <a class="navbar-lista-link nav-link" href="./roles/mid.html">MID</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/adc.html">ADC</a>
+                    <a class="navbar-lista-link nav-link" href="./roles/adc.html">ADC</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/sup.html">SUP</a>
+                    <a class="navbar-lista-link nav-link" href="./roles/sup.html">SUP</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./roles/flex.html">FLEX</a>
-                  </li>            
+                    <a class="navbar-lista-link nav-link" href="./roles/flex.html">FLEX</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="navbar-lista-link nav-link" href="./index.html">MENU</a>
+                  </li>               
                 </ul>
               </div>
             </div>

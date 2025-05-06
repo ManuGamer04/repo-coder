@@ -16,42 +16,45 @@
 
 <body>
     <header>
-        
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid">
-
-                <a class="navbar-brand" href="../index.html">
-                    <img class="logo" src="../media/logo/LeagueOG.jpg" alt="Logo pagina web">
-                </a>
-
+                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
+                <div class="navbar-marca">
+                    <a class="navbar-brand" href="index.html">
+                      <img class="logo-marca logo" src="../media/logo/LeagueOG.jpg" alt="Logo pagina web">
+                    </a>
+                </div>
+                
+
                 <div class="collapse navbar-collapse" id="navbar-toggler">
 
-                    <ul class="navbar-nav d-flex">
-
-                    
+                    <ul class="navbar-lista navbar-nav d-flex">
                         <li class="nav-item">
-                            <a class="nav-link" href="top.html">TOP</a>
+                            <a class="navbar-lista-link nav-link" href="top.html">TOP</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="jg.html">JG</a>
+                            <a class="navbar-lista-link nav-link" href="jg.html">JG</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="mid.html">MID</a>
+                            <a class="navbar-lista-link nav-link" href="mid.html">MID</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="adc.html">ADC</a>
+                            <a class="navbar-lista-link nav-link" href="adc.html">ADC</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="sup.html">SUP</a>
+                            <a class="navbar-lista-link nav-link" href="sup.html">SUP</a>
                         </li>
-                        
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html">MENU</a>
-                        </li>            
+                            <a class="navbar-lista-link nav-link" href="flex.html">FLEX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="navbar-lista-link nav-link" href="../index.html">MENU</a>
+                        </li>
+                                    
                     </ul>
               </div>
             </div>
@@ -86,65 +89,63 @@
         <div class="grid-campeones-desktop">
             <div class="presentacion-campeon">
                 
-                <img class="foto-champ" src="../media/campeones/sup/brand.webp" alt="Brand">
-                <h3 class="subtitulos">Brand</h3>
-                <p class="listas">Campeón de daño en área y control de fuego. Ideal para destruir grupos de enemigos con su poder ígneo.
-
-                </p>
+                <img class="foto-champ" src="../media/campeones/flex/amumu.webp" alt="Amumu">
+                <h3 class="subtitulos">Amumu</h3>
+                <p class="listas">Puede jugarse como jungla, pero también rinde como support, gracias a su gran iniciación en peleas (con Q y R en área) y su CC confiable. Su kit es fácil de usar y efectivo en teamfights.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="../media/campeones/sup/rakan.webp" alt="Rakan">
-                <h3 class="subtitulos">Rakan</h3>
-                <p class="listas">Campeón de soporte y movilidad. Perfecto para iniciar peleas y proteger a su equipo con su agilidad y encanto.</p>
+                <img class="foto-champ" src="../media/campeones/flex/lux.webp" alt="Lux">
+                <h3 class="subtitulos">Lux</h3>
+                <p class="listas"> Aunque suele ser mid, también es muy fuerte como support, gracias a su poke, escudo en área y su definitiva de largo alcance. Su flexibilidad le permite adaptarse a distintas composiciones de equipo.</p>
             </div>
 
             <div class="presentacion-campeon">
-                <img class="foto-champ" src="../media/campeones/sup/soraka.webp" alt="Soraka">
-                <h3 class="subtitulos">Soraka</h3>
-                <p class="listas">Campeona de curación y apoyo. Excelente para mantener con vida a sus compañeros de equipo durante las peleas más intensas.</p>
+                <img class="foto-champ" src="../media/campeones/flex/poppy.jpg" alt="Poppy">
+                <h3 class="subtitulos">Poppy</h3>
+                <p class="listas"> Tradicionalmente top, pero también funciona muy bien como jungla o incluso support, por su CC, su capacidad de cortar engages enemigos (con la W), y su buena iniciación o disengage con la R.</p>
             </div>
         </div>
 
         <div class="grid-campeones-mobile">
-            <div class="card" style="width: 90%;">
-                <img src="../media/campeones/sup/brand.webp" class="card-img-top" alt="Brand">
-                <div class="card-body">
-                  <h5 class="subtitulos card-title">Brand</h5>
-                  <p class="card-text">Campeón de daño en área y control de fuego. Ideal para destruir grupos de enemigos con su poder ígneo.</p>
+            <div class="tarjeta card" style="width: 90%;">
+                <img src="../media/campeones/flex/amumu.webp" class="card-img-top" alt="Amumu">
+                <div class="tarjeta-cuerpo card-body">
+                  <h5 class="subtitulos card-title">Amumu</h5>
+                  <p class="card-text">Puede jugarse como jungla, pero también rinde como support, gracias a su gran iniciación en peleas (con Q y R en área) y su CC confiable. Su kit es fácil de usar y efectivo en teamfights.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Es un mago</li>
-                  <li class="list-group-item">Escala con daño magico</li>
-                  <li class="list-group-item">Es a distancia</li>
+                <ul class="lista-grupo list-group list-group-flush">
+                  <li class="lista-grupo-elemento list-group-item">Es un mago/tanque</li>
+                  <li class="lista-grupo-elemento list-group-item">Escala con daño magico,armadura y resistencia magica</li>
+                  <li class="lista-grupo-elemento list-group-item">Es cuerpo a cuerpo</li>
                 </ul>
             </div>
         </div>
         <div class="grid-campeones-mobile">
-            <div class="card" style="width: 90%;">
-                <img src="../media/campeones/sup/rakan.webp" class="card-img-top" alt="Rakan">
-                <div class="card-body">
-                  <h5 class="subtitulos card-title">Rakan</h5>
-                  <p class="card-text">Campeón de soporte y movilidad. Perfecto para iniciar peleas y proteger a su equipo con su agilidad y encanto.</p>
+            <div class="tarjeta card" style="width: 90%;">
+                <img src="../media/campeones/flex/lux.webp" class="card-img-top" alt="Lux">
+                <div class="tarjeta-cuerpo card-body">
+                  <h5 class="subtitulos card-title">Lux</h5>
+                  <p class="card-text">Aunque suele ser mid, también es muy fuerte como support, gracias a su poke, escudo en área y su definitiva de largo alcance. Su flexibilidad le permite adaptarse a distintas composiciones de equipo.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Es un mago/tanque</li>
-                  <li class="list-group-item">Escala con daño magico y curaciones</li>
-                  <li class="list-group-item">Es cuerpo a cuerpo</li>
+                <ul class="lista-grupo list-group list-group-flush">
+                  <li class="lista-grupo-elemento list-group-item">Es un mago/tanque</li>
+                  <li class="lista-grupo-elemento list-group-item">Escala con daño magico y curaciones</li>
+                  <li class="lista-grupo-elemento list-group-item">Es cuerpo a cuerpo</li>
                 </ul>
             </div>
         </div>
         <div class="grid-campeones-mobile">
-            <div class="card" style="width: 90%;">
-                <img src="../media/campeones/sup/soraka.webp" class="card-img-top" alt="Soraka">
-                <div class="card-body">
-                  <h5 class="subtitulos card-title">Soraka</h5>
-                  <p class="card-text">Campeona de curación y apoyo. Excelente para mantener con vida a sus compañeros de equipo durante las peleas más intensas.</p>
+            <div class="tarjeta card" style="width: 90%;">
+                <img src="../media/campeones/flex/poppy.jpg" class="card-img-top" alt="Poppy">
+                <div class="tarjeta-cuerpo card-body">
+                  <h5 class="subtitulos card-title">Poppy</h5>
+                  <p class="card-text">Tradicionalmente top, pero también funciona muy bien como jungla o incluso support, por su CC, su capacidad de cortar engages enemigos (con la W), y su buena iniciación o disengage con la R.</p>
                 </div>
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item">Es un mago</li>
-                  <li class="list-group-item">Escala con curaciones y vida</li>
-                  <li class="list-group-item">Es a distancia</li>
+                <ul class="lista-grupo list-group list-group-flush">
+                  <li class="lista-grupo-elemento list-group-item">Es un mago</li>
+                  <li class="lista-grupo-elemento list-group-item">Escala con curaciones y vida</li>
+                  <li class="lista-grupo-elemento list-group-item">Es a distancia</li>
                 </ul>
             </div>
         </div>
@@ -154,20 +155,19 @@
                 <h4 class="subtitulos">¿Es un rol recomendado para principiantes?</h4>
                 <ul class="listas">
                     <li class="lista-desktop"> Sí, si te gusta:
-                        La Top Lane puede ser una excelente opción para jugadores que disfrutan de un estilo de juego más individualista. Si te atrae la idea de jugar de manera independiente y tomar decisiones clave sin depender demasiado de la coordinación constante con tus compañeros de equipo, este rol es ideal. Además, tendrás la oportunidad de participar en duelos 1v1, donde las habilidades mecánicas y el entendimiento de los campeones son esenciales para ganar. La Top Lane también te ofrece un impacto significativo en el juego tardío, ya que los campeones de esta línea tienen el poder de decidir el destino de las peleas en equipo cuando llegan al juego avanzado, gracias a su resistencia o daño.</li>
-                    <li class="lista-desktop">No, si prefieres:
-                        Por otro lado, si eres de los jugadores que prefieren la acción constante desde el primer minuto, o si disfrutas de un estilo de juego más grupal donde todo el equipo se coordina para obtener victorias, entonces la Top Lane puede no ser la mejor opción para ti. La Top Lane es una línea que requiere paciencia, ya que a menudo te verás enfrentando duelos largos y, en muchos casos, la clave está en sobrevivir y escalar hasta el juego tardío en lugar de buscar peleas tempranas. Si prefieres un rol que te permita estar más involucrado en las peleas grupales o en las interacciones constantes con tus compañeros de equipo, tal vez deberías considerar otras posiciones como Jungla o Soporte, que ofrecen más acción desde el principio del juego.</li>
+                        El rol de Flex es ideal para jugadores que disfrutan de la adaptabilidad y la flexibilidad en su estilo de juego. Si te atrae la idea de jugar en diversas posiciones y poder ajustarte a las necesidades de tu equipo, este rol es perfecto para vos. Flex te permite tener una experiencia variada, donde no estás limitado a una sola línea y puedes contribuir de diferentes maneras según lo que el equipo necesite. Ya sea que quieras ser el soporte en una pelea o llevar el peso del daño, Flex te da la libertad de tomar decisiones clave y ser un jugador integral. Además, jugar en varias posiciones te permite aprender sobre todos los roles, lo que aumenta tu comprensión del juego y tu capacidad para adaptarte a diferentes situaciones.</li>
+                    <li class="lista-desktop">Si eres de los jugadores que prefieren especializarse en una sola línea y tener un estilo de juego más enfocado, Flex puede no ser lo ideal para ti. El rol de Flex exige un nivel de adaptabilidad que puede ser incómodo si prefieres tener un enfoque claro y constante en una posición específica. Puede ser frustrante si no te gusta la idea de tener que cambiar de rol en medio de la partida, ya que no siempre tendrás el control sobre qué función cumplir en el equipo. Si prefieres un rol con menos incertidumbre y un enfoque más directo en las peleas grupales o la acción constante, otras posiciones como Jungla o Mid Lane podrían ser una mejor opción para ti, ya que permiten una participación más activa y predecible en el juego.</li>
                     <li class="lista-mobile">Sí, si te gusta:
-                        El rol de Support es ideal si disfrutás ayudar al equipo, controlar el mapa y proteger aliados. Es perfecto para un estilo de juego estratégico, basado en decisiones inteligentes más que en farmeo. Además, podés liderar y ser clave en la toma de decisiones sin necesidad de hacer todo el daño.<li>
+                        El rol de Flex es perfecto si disfrutas de la flexibilidad en el juego y la capacidad de adaptarte a diversas situaciones. Si te gusta tener la libertad de jugar en varias posiciones dependiendo de lo que el equipo necesite, este rol es para vos. Te permite demostrar tu versatilidad y tomar decisiones clave según lo que requiera el momento. Además, te da la oportunidad de ser un jugador integral que se ajusta a las necesidades del equipo.<li>
                     <li class="lista-mobile">No, si preferís:
-                        Si te gusta llevarte las kills, escalar solo o ser el protagonista, el rol de Support puede no ser para vos. Muchas veces trabajás en las sombras, y dependés más del equipo que de tu propio crecimiento. Roles como Mid o ADC quizás se adapten mejor a ese estilo.<li>
+                        Si preferís especializarte en una sola línea y concentrarte en perfeccionar tus habilidades en ese rol específico, el Flex puede no ser la mejor opción. La constante adaptación a diferentes posiciones puede resultar frustrante si te gusta tener un estilo de juego más fijo y no quieres preocuparte por aprender y dominar múltiples roles.<li>
                 </ul>
             </div>
             
             <div class="grid-titulo">
                 <h4 class="subtitulos">A continuacion te dejamos un video que resume todo lo que necesitas saber para empezar a jugar esta linea.</h4>
                 <div class="video-container">
-                    <iframe class="video" src="https://www.youtube-nocookie.com/embed/k-dOT95ontU?si=I4xpLODhMfmJDbKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe class="video" src="https://www.youtube.com/embed/ytddKOrgcRU?si=KeYYsldRtfZVys8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
             </div>
         </div>

@@ -1,0 +1,15 @@
+@use "./variables" as *;
+
+%subtitulo {
+    color: $oro;
+    font-size: 30px;
+    margin: 10px;
+}
+
+%listas{
+    color: white;
+    font-size: 25px;
+    list-style:none;
+    text-align: left;
+}
+
