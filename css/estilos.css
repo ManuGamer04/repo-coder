@@ -313,7 +313,7 @@ body {
   header .navbar .collapse {
     display: none !important;
   }
-  header .navbar .collapse .show {
+  header .navbar .collapse.show {
     display: block !important;
   }
   header .navbar .navbar-nav {
