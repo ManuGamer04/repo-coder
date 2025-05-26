@@ -1,15 +1,9 @@
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width:991px) {
     header{
         .navbar{
             padding:1rem;
             .navbar-brand {
                 display: none;
-            }
-            .collapse{
-                display: none !important;
-                .show{
-                    display: block !important;
-                }  
             }
             .navbar-nav {
                 flex-direction: column;
@@ -26,7 +20,6 @@
             .navbar-toggler {
                 border-color: #c8a02c;
                 background-color: #5d5246ed; /* o el color que quieras */
-                display: block !important;
             }
         }
     }

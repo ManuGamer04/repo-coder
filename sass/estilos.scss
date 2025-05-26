@@ -1,13 +1,17 @@
-// para activar el scss tengo que ejecutar el sass --watch sass/estilos.scss css/estilos.css
+// partials
 @use "./partials/variables";
 @use "./partials/mixins";
 @use "./partials/extends";
 @use "./partials/animaciones";
-
+//version desktop: min 992px
 @use "./partials/desktop/header-footer";
 @use "./partials/desktop/body-main";
 @use "./partials/desktop/grids-main";
-
+//version tablet: min 768px max 991px
+@use "./partials/tablet/tablet-header-footer";
+@use "./partials/tablet/tablet-body-main";
+@use "./partials/tablet/tablet-grids-main";
+//version mobile: max 767px
 @use "./partials/mobile/mobile-header-footer";
 @use "./partials/mobile/mobile-body-main";
 @use "./partials/mobile/mobile-grids-main";

@@ -2,6 +2,7 @@
 @use  "../extends" as *;
 @use  "../mixins" as *;
 
+
 html, body {
     width: 100%;
     height: 100%;
@@ -11,14 +12,14 @@ html, body {
 main{
     .titulos{
         color: $oro;
-        font-size: 50px;
+        font-size: $size-titulos;
         text-align: center;
-        padding: 50px;
+        padding: 2rem;
     }
     .parrafo-introduccion{
         color: $oro;
         text-align: center;
-        font-size: 40px;
+        font-size: $size-subtitulos;
     }
     .imagenes{
         display: grid;
@@ -28,7 +29,7 @@ main{
         align-items: center; 
         margin-bottom: 50px;
         .imagen{
-            width: 150px;
+            width: 100%;
             height: auto;
         }
     }

@@ -6,7 +6,7 @@
 
 header{
     .navbar{
-        padding: 2rem;
+        padding: 0.5rem;
         background-color: $negro;
         .navbar-marca{
             .logo-marca{
@@ -21,8 +21,8 @@ header{
             color: $oro;
             .navbar-lista-link{
                 color:$oro;
-                font-size: 50px;
-                margin: 25px;
+                font-size: 2em;
+                margin: 0.5em;
                 text-decoration: none;
                 position: relative;
                 transition: all 0.3s ease;

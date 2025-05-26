@@ -37,7 +37,7 @@
 }
 
 header .navbar {
-  padding: 2rem;
+  padding: 0.5rem;
   background-color: black;
 }
 header .navbar .navbar-marca .logo-marca {
@@ -52,8 +52,8 @@ header .navbar .navbar-lista {
 }
 header .navbar .navbar-lista .navbar-lista-link {
   color: #c8a02c;
-  font-size: 50px;
-  margin: 25px;
+  font-size: 2em;
+  margin: 0.5em;
   text-decoration: none;
   position: relative;
   transition: all 0.3s ease;
@@ -78,14 +78,14 @@ html, body {
 
 main .titulos {
   color: #c8a02c;
-  font-size: 50px;
+  font-size: 2.5em;
   text-align: center;
-  padding: 50px;
+  padding: 2rem;
 }
 main .parrafo-introduccion {
   color: #c8a02c;
   text-align: center;
-  font-size: 40px;
+  font-size: 2em;
 }
 main .imagenes {
   display: grid;
@@ -96,7 +96,7 @@ main .imagenes {
   margin-bottom: 50px;
 }
 main .imagenes .imagen {
-  width: 150px;
+  width: 100%;
   height: auto;
 }
 
@@ -140,6 +140,10 @@ body {
   height: auto;
   border-radius: 10px;
 }
+.grid-campeones-tablet {
+  display: none;
+}
+
 .grid-campeones-mobile {
   display: none;
 }
@@ -179,7 +183,7 @@ body {
   height: 100%; /* El alto se ajusta automáticamente manteniendo la proporción */
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) and (max-width: 991px) {
   header .navbar {
     padding: 1rem;
   }
@@ -199,6 +203,133 @@ body {
   header .navbar .navbar-toggler {
     border-color: #c8a02c;
     background-color: rgba(93, 82, 70, 0.9294117647); /* o el color que quieras */
+  }
+  footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 20px;
+    color: #c8a02c;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Merriweather", sans-serif;
+    background-color: black;
+  }
+  footer .subtitulos {
+    color: #c8a02c;
+    font-size: 30px;
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  main .titulos {
+    color: #c8a02c;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+  }
+  main .parrafo-introduccion {
+    color: #c8a02c;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  main .imagenes {
+    grid-template-columns: 1fr 1fr; /* 2 columnas en móvil */
+    gap: 50px;
+  }
+  main .imagenes .imagen {
+    width: 75px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .grid-info {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-info .grid-titulo .subtitulos {
+    color: #c8a02c;
+    font-size: 1.5rem;
+    margin: 0px;
+  }
+  .grid-info .grid-titulo .listas {
+    font-size: 1rem;
+  }
+  .grid-campeones-desktop {
+    display: none;
+  }
+  .grid-campeones-tablet {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-campeones-tablet .presentacion-campeon {
+    background-color: rgba(93, 82, 70, 0.9294117647);
+    border: 1px solid #c8a02c;
+    border-radius: 10px;
+    margin: 1em;
+    text-align: center;
+  }
+  .grid-campeones-tablet .presentacion-campeon .foto-champ {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  .grid-campeones-tablet .presentacion-campeon .subtitulos {
+    color: #c8a02c;
+    font-size: 1.5em;
+    margin: 10px;
+  }
+  .grid-campeones-tablet .presentacion-campeon .listas {
+    color: white;
+    font-size: 1em;
+    list-style: none;
+    text-align: center;
+  }
+  .grid-video {
+    grid-template-columns: 1fr;
+  }
+  .grid-video .grid-titulo .subtitulos {
+    color: #c8a02c;
+    font-size: 20px;
+    margin: 0px;
+  }
+  .grid-video .grid-titulo .listas {
+    font-size: 15px;
+  }
+  .grid-video .grid-titulo .listas .lista-desktop {
+    margin-bottom: 0px;
+    display: none;
+  }
+  .grid-video .grid-titulo .listas .lista-mobile {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header .navbar {
+    padding: 1rem;
+  }
+  header .navbar .navbar-brand {
+    display: none;
+  }
+  header .navbar .collapse {
+    display: none !important;
+  }
+  header .navbar .collapse .show {
+    display: block !important;
+  }
+  header .navbar .navbar-nav {
+    flex-direction: column;
+    align-items: flex-start; /* Opcional, para que empiecen a la izquierda */
+    width: 100%; /* Dejá el ancho completo */
+  }
+  header .navbar .navbar-nav .nav-item .nav-link {
+    font-size: 20px;
+    margin: 5px;
+    padding: 0;
+  }
+  header .navbar .navbar-toggler {
+    border-color: #c8a02c;
+    background-color: rgba(93, 82, 70, 0.9294117647); /* o el color que quieras */
+    display: block !important;
   }
   footer {
     margin-top: auto;
@@ -250,6 +381,9 @@ body {
     font-size: 15px;
   }
   .grid-campeones-desktop {
+    display: none;
+  }
+  .grid-campeones-tablet {
     display: none;
   }
   .grid-campeones-mobile {
